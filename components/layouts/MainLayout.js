@@ -1,8 +1,9 @@
 import NavBar from "../nav";
 import Footer from "../footer";
 import Head from "next/head";
+import { getFooterInfo } from "@/services/getFooterData";
 
-const MAinLAyout = ({ children, footerData = {} }) => {
+const MAinLAyout = ({ children, footerData }) => {
   return (
     <>
       <Head>
@@ -12,7 +13,7 @@ const MAinLAyout = ({ children, footerData = {} }) => {
       <div className="main_layout">
         <NavBar />
         {children}
-        {/* <Footer data={footerData} /> */}
+        <Footer data={footerData} />
       </div>
     </>
   );

@@ -1,8 +1,7 @@
 import Image from "next/image";
 
-const Footer = ({ data = {} }) => {
-  const { list, description, logo, copyRight, socialMedia } =
-    data?.userData?.footer || {};
+const Footer = ({ data }) => {
+  const { list, description, logo, copyRight, socialMedia } = data || {};
   return (
     <footer className="footer">
       <div className="footer-wrapper">

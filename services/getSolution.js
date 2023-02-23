@@ -1,3 +1,4 @@
 export const getSolutions = async () => {
-  return await fetch("http://localhost:3000/api/get_solution");
+  const url = process.env.DB_HOST;
+  return await fetch(`${url}/api/get_solution`);
 };

@@ -11,18 +11,18 @@ import "../styles/bottomCards/bottomCards.css";
 import "../styles/cards/cards.css";
 import "../styles/footer/footer.css";
 import MAinLAyout from "@/components/layouts/MainLayout";
-import getFooterInfo from "./api/get_footer_info";
+import { getFooterInfo } from "@/services/getFooterData";
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps, data }) {
   return (
-    <MAinLAyout footerData={pageProps}>
+    <MAinLAyout footerData={data}>
       <Component {...pageProps} />
     </MAinLAyout>
   );
 }
 
-export async function getStaticProps(ctx) {
-  const res = await getFooterInfo();
-  const data = await res.json();
-  return { props: { data } };
-}
+App.getInitialProps = async () => {
+  const response = await getFooterInfo();
+  const data = await response.json();
+  return { data };
+};
