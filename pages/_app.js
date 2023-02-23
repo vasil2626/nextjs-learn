@@ -11,11 +11,10 @@ import "../styles/bottomCards/bottomCards.css";
 import "../styles/cards/cards.css";
 import "../styles/footer/footer.css";
 import MAinLAyout from "@/components/layouts/MainLayout";
-import { getFooterInfo } from "./api/get_footer_info";
+import getFooterInfo from "./api/get_footer_info";
 
 export default function App({ Component, pageProps }) {
   const { footer } = pageProps.userData;
-  console.log(footer);
   return (
     <MAinLAyout footerData={footer}>
       <Component {...pageProps} />
