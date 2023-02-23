@@ -2,7 +2,7 @@ import NavBar from "../nav";
 import Footer from "../footer";
 import Head from "next/head";
 
-const MAinLAyout = ({ children, footerData }) => {
+const MAinLAyout = ({ children, footerData = {} }) => {
   return (
     <>
       <Head>

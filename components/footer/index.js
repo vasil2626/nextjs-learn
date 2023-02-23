@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-const Footer = ({ data }) => {
-  const { list, description, logo, copyRight, socialMedia } = data;
+const Footer = ({ data = {} }) => {
+  const { list, description, logo, copyRight, socialMedia } =
+    data?.userData?.footer || {};
   return (
     <footer className="footer">
       <div className="footer-wrapper">
@@ -33,7 +34,7 @@ const Footer = ({ data }) => {
                   <div className="list-wrapper" key={id}>
                     <span className="list-title">{listTitle}</span>
                     <ul className="list">
-                      {listItem.map((item, index) => {
+                      {listItem?.map((item, index) => {
                         return (
                           <li key={index} className="list-item">
                             {item}
@@ -49,7 +50,7 @@ const Footer = ({ data }) => {
           <div className="copy-right-wrapper">
             <div className="copy-right-slug">{copyRight}</div>
             <div className="social-media-wrapper">
-              {socialMedia.map(({ id, url }) => {
+              {socialMedia?.map(({ id, url }) => {
                 return (
                   <div className="media-icon" key={id}>
                     <Image src={url} width={16} height={16} alt="icon" />

@@ -14,16 +14,15 @@ import MAinLAyout from "@/components/layouts/MainLayout";
 import getFooterInfo from "./api/get_footer_info";
 
 export default function App({ Component, pageProps }) {
-  const { footer } = pageProps.userData;
   return (
-    <MAinLAyout footerData={footer}>
+    <MAinLAyout footerData={pageProps}>
       <Component {...pageProps} />
     </MAinLAyout>
   );
 }
 
-export async function getServerSideProps() {
-  const res = getFooterInfo();
+export async function getStaticProps(ctx) {
+  const res = await getFooterInfo();
   const data = await res.json();
   return { props: { data } };
 }
