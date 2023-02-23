@@ -1,0 +1,16 @@
+.bottom-cards-wrapper {
+  margin-top: 80px;
+}
+.bottom-cards-head-wrappers {
+  margin-bottom: 16px;
+}
+.bottom-cards-subtitle-wrapper {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.bottom-cads-items {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}

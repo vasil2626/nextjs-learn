@@ -1,0 +1,64 @@
+.step-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.step-card :last-child {
+  margin-bottom: 80px;
+}
+
+.step-style-head {
+  font-family: "Mynerve", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  letter-spacing: 0.25px;
+
+  color: #5d5dff;
+}
+
+.step-cad-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  margin: 8px 0;
+  letter-spacing: -0.25px;
+  color: #d9e3ea;
+}
+
+.step-card-description {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  /* width: 65%; */
+  letter-spacing: -0.25px;
+  display: block;
+  color: #9ba9b4;
+}
+
+.step-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-left: 8px;
+  letter-spacing: -0.25px;
+  color: #9ba9b4;
+}
+
+.step-list-wrapper {
+  margin-top: 16px;
+}
+
+.step-list {
+  margin-top: 8px;
+}

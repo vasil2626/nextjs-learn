@@ -1,0 +1,43 @@
+.solution {
+  margin-top: 126px;
+}
+
+.solution-section-mark {
+  width: 184px;
+  padding: 8px 0;
+  background: #c6f6d5;
+  box-shadow: 0px 1px 3px rgba(25, 32, 44, 0.04);
+  border-radius: 15px;
+  text-align: center;
+  margin: 0 auto 16px;
+}
+
+.solution-mark-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #36a269;
+}
+
+.solution-items-wrapper:nth-child(odd) .step-card {
+  flex-direction: row-reverse;
+}
+.solution-wrapper .container {
+  border-bottom: 1px solid #33363a;
+}
+
+.solution-items-wrapper:nth-child(even) .step-card .step-card-text {
+  margin-right: 64px;
+  margin-left: 0;
+}
+
+.step-card-text {
+  margin-left: 64px;
+}
+
+.description-wrapper {
+  margin-top: 16px;
+  text-align: center;
+}

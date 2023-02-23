@@ -1,0 +1,60 @@
+.cards {
+  min-width: 352px;
+  padding: 40px;
+  background: #25282c;
+  margin: 0 12px;
+}
+
+.card-user {
+  width: 48px;
+  height: 48px;
+  border: 0.1px solid transparent;
+  border-radius: 50%;
+  background-color: gold;
+}
+
+.card-content-text-container {
+  border-bottom: 1px solid #33363a;
+}
+
+.card-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  display: block;
+  text-align: start;
+  letter-spacing: -0.25px;
+  color: #9ba9b4;
+  margin: 16px 0 24px;
+}
+
+.card-user-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: #d9e3ea;
+}
+
+.card-user-roll {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: #5d5dff;
+}
+
+.card-footer {
+  margin-top: 20px;
+  text-align: start;
+}
+
+.card-user-name {
+  margin-right: 10px;
+}

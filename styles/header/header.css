@@ -1,0 +1,44 @@
+.header {
+  margin-top: 73px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-shape {
+  position: absolute;
+  width: 563.37px;
+  height: 551.64px;
+  right: 55%;
+  top: 530px;
+  background-image: url(../../public/head_shape.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  z-index: -1;
+}
+
+.sub-title-wrapper {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.buttons-wrapper {
+  display: flex;
+}
+
+.buttons-wrapper button:not(:last-child) {
+  margin-right: 12px;
+}
+
+.header-img {
+  position: relative;
+  width: 1024px;
+  height: 576px;
+  margin-top: 64px;
+}
