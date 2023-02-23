@@ -10,22 +10,20 @@ export default function Home({ data, userData }) {
     <>
       <Header />
       <Features />
-      <Solution />
-      {/* <Solution data={data} /> */}
-      {/* <BottomCards users={userData.cards} /> */}
-      <BottomCards />
+      <Solution data={data} />
+      <BottomCards users={userData.cards} />
     </>
   );
 }
 
-// export async function getServerSideProps() {
-//   const res = await getSolutions();
-//   const data = await res.json();
+export async function getServerSideProps() {
+  const res = await getSolutions();
+  const data = await res.json();
 
-//   const userDataRes = await getUserData();
-//   const userData = await userDataRes.json();
+  const userDataRes = await getUserData();
+  const userData = await userDataRes.json();
 
-//   return {
-//     props: { data, userData },
-//   };
-// }
+  return {
+    props: { data, userData },
+  };
+}

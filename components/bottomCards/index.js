@@ -17,7 +17,7 @@ const BottomCards = ({ users }) => {
               }
             />
             <div className="bottom-cads-items">
-              {users.map(({ text, icon, id, userName, userRol }) => {
+              {users?.map(({ text, icon, id, userName, userRol }) => {
                 return (
                   <div key={id}>
                     <Cards

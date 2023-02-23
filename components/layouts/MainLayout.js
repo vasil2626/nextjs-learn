@@ -12,7 +12,7 @@ const MAinLAyout = ({ children, footerData = {} }) => {
       <div className="main_layout">
         <NavBar />
         {children}
-        <Footer data={footerData} />
+        {/* <Footer data={footerData} /> */}
       </div>
     </>
   );
