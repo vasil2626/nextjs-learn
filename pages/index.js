@@ -18,14 +18,14 @@ export default function Home({ data, userData }) {
   );
 }
 
-export async function getServerSideProps() {
-  const res = await getSolutions();
-  const data = await res.json();
+// export async function getServerSideProps() {
+//   const res = await getSolutions();
+//   const data = await res.json();
 
-  const userDataRes = await getUserData();
-  const userData = await userDataRes.json();
+//   const userDataRes = await getUserData();
+//   const userData = await userDataRes.json();
 
-  return {
-    props: { data, userData },
-  };
-}
+//   return {
+//     props: { data, userData },
+//   };
+// }
