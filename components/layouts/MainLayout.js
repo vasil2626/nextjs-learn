@@ -1,7 +1,6 @@
 import NavBar from "../nav";
 import Footer from "../footer";
 import Head from "next/head";
-// import { getFooterData } from "@/services/getFooterData";
 
 const MAinLAyout = ({ children, footerData }) => {
   return (
