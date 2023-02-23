@@ -10,8 +10,10 @@ export default function Home({ data, userData }) {
     <>
       <Header />
       <Features />
-      <Solution data={data} />
-      <BottomCards users={userData.cards} />
+      <Solution />
+      {/* <Solution data={data} /> */}
+      {/* <BottomCards users={userData.cards} /> */}
+      <BottomCards />
     </>
   );
 }
