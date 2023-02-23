@@ -11,7 +11,7 @@ import "../styles/bottomCards/bottomCards.css";
 import "../styles/cards/cards.css";
 import "../styles/footer/footer.css";
 import MAinLAyout from "@/components/layouts/MainLayout";
-import { getFooterInfo } from "@/services/getFooterData";
+import { getFooterInfo } from "@/services/getFooterInfo";
 
 export default function App({ Component, pageProps }) {
   const { footer } = pageProps.userData;
