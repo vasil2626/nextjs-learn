@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
 }
 
 export async function getServerSideProps() {
-  const res = await getFooterInfo();
+  const res = getFooterInfo();
   const data = await res.json();
   return { props: { data } };
 }
