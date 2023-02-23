@@ -1,0 +1,22 @@
+.slug {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.slug-line {
+  width: 94px;
+  height: 1px;
+  border: 1px dashed #33363a;
+}
+
+.slug-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: #9ba9b4;
+  margin: 0 12px;
+}

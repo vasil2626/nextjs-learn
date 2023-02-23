@@ -10,19 +10,12 @@ import "../styles/stepCards/stepCards.css";
 import "../styles/bottomCards/bottomCards.css";
 import "../styles/cards/cards.css";
 import "../styles/footer/footer.css";
-import MAinLAyout from "@/components/layouts/MainLayout";
-import { getFooterInfo } from "@/services/getFooterData";
+import "../styles/signButtons/googleSign.css";
+import "../styles/slug/slug.css";
+import "../styles/signIn/signIn.css";
 
 export default function App({ Component, pageProps, data }) {
-  return (
-    <MAinLAyout footerData={data}>
-      <Component {...pageProps} />
-    </MAinLAyout>
-  );
-}
+  const getLayout = Component.getLayout || ((page) => page);
 
-App.getInitialProps = async () => {
-  const response = await getFooterInfo();
-  const data = await response.json();
-  return { data };
-};
+  return getLayout(<Component {...pageProps} />);
+}

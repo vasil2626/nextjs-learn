@@ -208,4 +208,18 @@ export const db = {
       },
     ],
   },
+  signInForm: [
+    {
+      id: "1001",
+      label: "Full Name",
+      type: "text",
+      placeHolder: "First and last name",
+    },
+    {
+      id: "1002s",
+      label: "Password",
+      type: "password",
+      placeHolder: "Password",
+    },
+  ],
 };
